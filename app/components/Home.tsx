@@ -35,30 +35,32 @@ import pic36 from "../../public/pic36.png";
 import pic37 from "../../public/pic37.png";
 import pic38 from "../../public/pic38.png";
 
-import { Josefin_Sans,  } from "next/font/google";
-import {lato} from "@/app/ui/fonts"
+import { lato} from    "@/app/ui/fonts"
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check } from  "lucide-react";
+import {Josefin_Sans} from "next/font/google";
+
 
 // Font configuration
-const josefinSans = Josefin_Sans({
-  subsets: ["latin"],
+const josefin_Sans = Josefin_Sans({
+  subsets: ['latin'],
   weight: ["400", "700"],
 });
 
 const Home = () => {
   return (
     <>
-      <div className="flex justify-evenly items-center bg-[#F2F0FF]">
+      <div className="flex justify-evenly  h-[650px] bg-[#F2F0FF]">
         <div className="mt-none">
           <Image src={pic} height={387} width={387} alt="The light" />
         </div>
-        <div className={josefinSans.className}>
+        <div className="flex items-center">
+        <div className={josefin_Sans.className}>
           <h1 className="text-mypink font[53px]">Best Furniture For Your Castle</h1>
           <h2 className="text-black font-bold text-[53px]">
-            New Furniture Collection <br /> Trend in 2020
+            New Furniture Collection  Trend in 2020
           </h2>
-          <p>
+          <p className="text-[#8A8FB9]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
             corporis corrupti ab. Excepturi, omnis quidem?
           </p>
@@ -67,15 +69,16 @@ const Home = () => {
         <div>
           <Image src={pic2} height={629} width={629} alt="The UI photo" />
         </div>
+        </div>
       </div>
       <div>
         <h1
-          className={`${josefinSans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
+          className={`${josefin_Sans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
         >
           Featured Products
         </h1>
         <div className="flex justify-evenly items-center">
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <Image
               src={pic20}
               height={244}
@@ -83,18 +86,18 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
-            <Image src={rectangle} height={4} width={52} alt="rectangle" />
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <Image src={rectangle} height={4} width={52} alt="rectangle"/>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Code - Y523201
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               $42.00
             </h1>
           </div>
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <Image
               src={pic21}
               height={244}
@@ -102,18 +105,18 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
             <Image src={rectangle} height={4} width={52} alt="rectangle" />
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Code - Y523201
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               $42.00
             </h1>
           </div>
-          <div>
+          <div  className="flex flex-col justify-center items-center">
             <Image
               src={pic22}
               height={244}
@@ -121,18 +124,18 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
             <Image src={rectangle} height={4} width={52} alt="rectangle" />
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Code - Y523201
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               $42.00
             </h1>
           </div>
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <Image
               src={pic23}
               height={244}
@@ -140,14 +143,14 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
             <Image src={rectangle} height={4} width={52} alt="rectangle" />
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Code - Y523201
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               $42.00
             </h1>
           </div>
@@ -155,16 +158,15 @@ const Home = () => {
       </div>
       <div>
         <h1
-          className={`${josefinSans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
+          className={`${josefin_Sans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
         >
           Latest Products
         </h1>
-        <div className=" flex justify-evenly items-center mb-10">
+        <div className="flex justify-evenly items-center mb-10">
         <a href="#" className="mx-4 text-mypink">New Arrival </a>
         <a href="#" className="mx-4 text-[#0D0E43]">Best Seller</a>
         <a href="#" className="mx-4 text-[#0D0E43]">Featured</a>
         <a href="#" className="mx-4 text-[#0D0E43]">Special Offer </a>
-
         </div>
         <div className="flex justify-evenly items-center">
           <div>
@@ -175,7 +177,7 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
           </div>
@@ -187,7 +189,7 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
           </div>
@@ -199,7 +201,7 @@ const Home = () => {
               alt="Cantilever Chair"
               className="bg-background"
             />
-            <h1 className={`${josefinSans.className} text-mypink`}>
+            <h1 className={`${josefin_Sans.className} text-mypink`}>
               Cantilever chair
             </h1>
           </div>
@@ -214,7 +216,7 @@ const Home = () => {
                 alt="Cantilever Chair"
                 className="bg-background"
               />
-              <h1 className={`${josefinSans.className} text-mypink`}>
+              <h1 className={`${josefin_Sans.className} text-mypink`}>
                 Cantilever chair
               </h1>
             </div>
@@ -226,7 +228,7 @@ const Home = () => {
                 alt="Cantilever Chair"
                 className="bg-background"
               />
-              <h1 className={`${josefinSans.className} text-mypink`}>
+              <h1 className={`${josefin_Sans.className} text-mypink`}>
                 Cantilever chair
               </h1>
             </div>
@@ -238,7 +240,7 @@ const Home = () => {
                 alt="Cantilever Chair"
                 className="bg-background"
               />
-              <h1 className={`${josefinSans.className} text-mypink`}>
+              <h1 className={`${josefin_Sans.className} text-mypink`}>
                 Cantilever chair
               </h1>
             </div>
@@ -248,7 +250,7 @@ const Home = () => {
       <div>
         <div>
           <h1
-            className={`${josefinSans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
+            className={`${josefin_Sans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
           >
             What Shopex Offer!
           </h1>
@@ -262,7 +264,7 @@ const Home = () => {
                 alt="Cantilever Chair"
                 className="bg-background"
               />
-              <h1 className={`${josefinSans.className} p-5 text-[#151875]`}>
+              <h1 className={`${josefin_Sans.className} p-5 text-[#151875]`}>
                 24/7 Support
               </h1>
               <p className="text-[16px] pr-20 pl-20 text-center text-[#1A0B5B4D]">
@@ -272,7 +274,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col justify-evenly items-center">
               <Image src={pic13} height={65} width={65} alt="rectangle" />
-              <h1 className={`${josefinSans.className} p-5 text-[#151875]`}>
+              <h1 className={`${josefin_Sans.className} p-5 text-[#151875]`}>
                 24/7 Support
               </h1>
               <p className="text-[16px] pr-20 pl-20 text-center text-[#1A0B5B4D]">
@@ -289,7 +291,7 @@ const Home = () => {
                 alt="Cantilever Chair"
                 className="bg-background"
               />
-              <h1 className={`${josefinSans.className} p-5 text-[#151875]`}>
+              <h1 className={`${josefin_Sans.className} p-5 text-[#151875]`}>
                 24/7 Support
               </h1>
               <p className="text-[16px] pr-20 pl-20 text-center text-[#1A0B5B4D]">
@@ -299,7 +301,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col justify-evenly items-center">
               <Image src={pic15} height={65} width={65} alt="rectangle" />
-              <h1 className={`${josefinSans.className} p-5 text-[#151875]`}>
+              <h1 className={`${josefin_Sans.className} p-5 text-[#151875]`}>
                 24/7 Support
               </h1>
               <p className="text-[16px] pr-20 pl-20 text-center text-[#1A0B5B4D]">
@@ -316,7 +318,7 @@ const Home = () => {
       <div className="flex justify-evenly items-center  h-[550px] w-[1050px]">
         <Image className="h-[550px] w-[509px] mr-10" src={pic16} alt="Sofa"  />
         <div>
-          <h1 className={`${josefinSans.className} p-5 text-[#151875] text-[35px] font-bold`}>
+          <h1 className={`${josefin_Sans.className} p-5 text-[#151875] text-[35px] font-bold`}>
             Unique Features Of leatest & Trending Poducts
           </h1>
           <div className="flex items-center gap-3 mb-5">
@@ -351,7 +353,7 @@ const Home = () => {
       </div>
       </div>
       <h1
-        className={`${josefinSans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
+        className={`${josefin_Sans.className} flex justify-evenly items-center font-bold text-[42px] text-[#1A0B5B] p-10`}
       >
         Trending Products
       </h1>
@@ -364,14 +366,14 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-mypink`}>
+          <h1 className={`${josefin_Sans.className} text-mypink`}>
             Cantilever chair
           </h1>
 
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
             Code - Y523201
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -381,14 +383,14 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-mypink`}>
+          <h1 className={`${josefin_Sans.className} text-mypink`}>
             Cantilever chair
           </h1>
 
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
             Code - Y523201
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -398,14 +400,14 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-mypink`}>
+          <h1 className={`${josefin_Sans.className} text-mypink`}>
             Cantilever chair
           </h1>
 
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
             Code - Y523201
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -415,13 +417,13 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-mypink`}>
+          <h1 className={`${josefin_Sans.className} text-mypink`}>
             Cantilever chair
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
             Code - Y523201
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
 
       </div>
@@ -436,33 +438,33 @@ const Home = () => {
         <div className="flex items-center justify-start ">
           <div className="w-[107px] h-[74px]  bg-[#F5F6F8] flex items-center justify-center"><Image className="w-[67px] h-[67px]" src={pic26} alt="/"/></div>
           <div className="flex flex-col justify-start items-start ml-5">
-          <h1 className={`${josefinSans.className} text-[#151875] `}>Executive Seat chair</h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875] text-[16px] w-[151px] h-[16px] `}>Executive Seat chair</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
           </div>
         </div>
 
         <div className="flex items-center justify-start">
           <div className="w-[107px] h-[74px]  bg-[#F5F6F8] flex items-center justify-center"><Image className="w-[64px] h-[71px]" src={pic27} alt="/"/></div>
            <div  className="flex flex-col justify-start items-start ml-5">
-          <h1 className={`${josefinSans.className} text-[#151875]`} >Executive Seat chair</h1> 
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875] text-[16px] w-[151px] h-[16px] `} >Executive Seat chair</h1> 
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
           </div>
         </div>
 
         <div className="flex items-center justify-start">
           <div className="w-[107px] h-[74px]  bg-[#F5F6F8] flex items-center justify-center"><Image className="w-[67px] h-[67px]" src={pic28} alt="/"/> </div>
            <div className="flex flex-col justify-start items-start ml-5">
-          <h1 className={`${josefinSans.className} text-[#151875]`}>Executive Seat chair</h1> 
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875] text-[16px] w-[151px] h-[16px] `}>Executive Seat chair</h1> 
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
           </div>
         </div>
       </div>
       </div>
       <div className="justify-center items-center flex flex-col ">
         <div className=" flex justify-evenly items-center mb-10 ">
-        <h1 className={`${josefinSans.className} text-[#151875] text-[42px]`} >Discount Items</h1>
+        <h1 className={`${josefin_Sans.className} text-[#151875] font-bold text-[42px]`} >Discount Items</h1>
         </div>
-        <div className=" flex justify-evenly items-center w-[400px] ">
+        <div className=" flex justify-evenly items-center w-[400px] mb-10 ">
         <a href="#" className="mx-4 text-mypink text-[18px]">Wood Chair</a>
         <a href="#" className="mx-4 text-[#0D0E43]">Plastic Chair</a>
         <a href="#" className="mx-4 text-[#0D0E43]">Sofa Collection</a>
@@ -472,7 +474,7 @@ const Home = () => {
       <div className="flex justify-evenly items-center  h-[550px] w-[1050px]">
         
         <div>
-          <h1 className={`${josefinSans.className} p-5 text-[#151875] text-[30px] font-bold`}>
+          <h1 className={`${josefin_Sans.className} p-5 text-[#151875] text-[30px] font-bold`}>
           20% Discount Of All Products
           </h1>
           <h1 className="text-mypink ml-10 text-[21px] mb-4">Eams Sofa Compact</h1>
@@ -512,7 +514,7 @@ const Home = () => {
         <Image className="h-[550px] w-[509px] mr-15" src={pic29} alt="Sofa"  />
       </div>
       </div>
-          <h1 className={`${josefinSans.className} p-5 text-[#151875] text-[35px] font-bold justify-evenly flex items-center mt-5`}>
+          <h1 className={`${josefin_Sans.className} p-5 text-[#151875] text-[35px] font-bold justify-evenly flex items-center mt-5`}>
             Top Cetegories
           </h1>
           <div className="flex justify-evenly items-center bg-cover bg-center rounded-full ">
@@ -524,10 +526,10 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
             Mini LCV Chair
           </h1>
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -537,11 +539,11 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
           Mini LCV Chair
           </h1>
  
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -551,12 +553,12 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
           Mini LCV Chair
           </h1>
 
            
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
         <div>
           <Image
@@ -566,23 +568,23 @@ const Home = () => {
             alt="Cantilever Chair"
             className="bg-background"
           />
-          <h1 className={`${josefinSans.className} text-[#151875]`}>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>
           Mini LCV Chair
           </h1>
           
-          <h1 className={`${josefinSans.className} text-[#151875]`}>$32.00</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875]`}>$32.00</h1>
         </div>
       </div>
         
         <div className="flex justify-evenly items-center">
           <div className="img">
          <div className=" flex justify-evenly items-center font-bold">
-          <h1 className={`${josefinSans.className} text-[#151875] mt-28  text-[35px] justify-evenly items-center`}>Get Leatest Update By Subscribe <br /> 0ur Newslater</h1>
+          <h1 className={`${josefin_Sans.className} text-[#151875] mt-28  text-[35px] justify-evenly items-center`}>Get Leatest Update By Subscribe <br /> 0ur Newslater</h1>
           </div>
           <Button  variant={"ghost"} className="bg-mypink ml-96 mb-10 text-white">Shop Now</Button>
           </div>
         </div>
-<div className="ml-16">
+<div className="ml-40 mb-32">
         <Image
             src={pic35}
             height={93}
@@ -592,7 +594,7 @@ const Home = () => {
           />
 </div>
 <div>
-<h1 className={`${josefinSans.className} text-[#151875] mt-10 mb-10 text-[42px] flex justify-evenly items-center font-bold`}>Latest Blog</h1>
+<h1 className={`${josefin_Sans.className} text-[#151875] mt-10 mb-10 text-[42px] flex justify-evenly items-center font-bold`}>Latest Blog</h1>
 </div>
 <div className="flex justify-evenly items-center">
           <div>
@@ -604,22 +606,22 @@ const Home = () => {
               className="bg-background"
             />
             <div className="flex gap-9 text-[14px]">
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Sabir Ali 
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               20 August 2020 
             </h1>
             </div>
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#151875]`}>
             Top esssential Trends in 2021
             </h1>
 
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
             More off this less hello <br /> samlande  lied much
 over <br /> tightly circa horse taped mightly
             </h1>
-            <Button className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#151875] `}> Read More</Button>
+            <Button className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#151875] `}> Read More</Button>
           </div>
           <div>
             <Image
@@ -630,22 +632,22 @@ over <br /> tightly circa horse taped mightly
               className="bg-background"
             />
             <div className="flex gap-9 text-[14px]">
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Sabir Ali 
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               20 August 2020 
             </h1>
             </div>
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-mypink`}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-mypink`}>
             Top esssential Trends in 2021
             </h1>
 
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
             More off this less hello <br /> samlande  lied much
 over <br /> tightly circa horse taped mightly
             </h1>
-            <Button className={`${josefinSans.className} font-bold text-[18px] mt-8 text-mypink `}> Read More</Button>
+            <Button className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-mypink `}> Read More</Button>
           </div>
           <div>
             <Image
@@ -656,22 +658,22 @@ over <br /> tightly circa horse taped mightly
               className="bg-background"
             />
             <div className="flex gap-9 text-[14px]">
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               Sabir Ali 
             </h1>
-            <h1 className={`${josefinSans.className} text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} text-[#151875]`}>
               20 August 2020 
             </h1>
             </div>
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#151875]`}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#151875]`}>
             Top esssential Trends in 2021
             </h1>
 
-            <h1 className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
+            <h1 className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#72718F] `}>
             More off this less hello <br /> samlande  lied much
 over <br /> tightly circa horse taped mightly
             </h1>
-            <Button className={`${josefinSans.className} font-bold text-[18px] mt-8 text-[#151875] `}> Read More</Button>
+            <Button className={`${josefin_Sans.className} font-bold text-[18px] mt-8 text-[#151875] `}> Read More</Button>
           </div>
         </div>
     </>

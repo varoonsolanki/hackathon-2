@@ -1,3 +1,5 @@
+import { FacebookIcon, InstagramIcon, LinkedinIcon, } from "lucide-react";
+
  const Footer = () => {
   return (
     <footer className="bg-gray-100 py-10 mt-10">
@@ -63,15 +65,15 @@
         {/* Footer Bottom */}
         <div className="mt-8 border-t pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500">©Webecy - All Rights Reserved</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="text-gray-500 hover:text-gray-700">
-              <i className="fab fa-facebook"></i>
+          <div className="flex items-center justify-evenly mr-96 space-x-4 mt-4 md:mt-0">
+            <a href="https://web.facebook.com/varoon.kumar.1023?mibextid=ZbWKwL&_rdc=1&_rdr#" className="text-gray-500 hover:text-gray-700">
+              <FacebookIcon/>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-700">
-              <i className="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/varoonkumarmalhi/profilecard/?igsh=N3R2dDIyN2sxdDRv" className="text-gray-500 hover:text-gray-700">
+               <InstagramIcon/>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-700">
-              <i className="fab fa-twitter"></i>
+            <a href="https://www.linkedin.com/in/varoon-kumar-274a512b7/" className="text-gray-500 hover:text-gray-700">
+              <LinkedinIcon/>
             </a>
           </div>
         </div>

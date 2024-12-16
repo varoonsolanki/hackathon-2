@@ -17,13 +17,15 @@ const Navbar = () => {
         {/* Links */}
         <div className="hidden md:flex items-center space-x-8">
           <div className="relative">
-            <button
+           <Link href={'/'}>
+           <button
               className="text-pink-500 font-medium hover:text-pink-600 flex items-center"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Home
               <span className="ml-1">&#x25BE;</span>
             </button>
+           </Link>
             {isDropdownOpen && (
               <div className="absolute top-8 left-0 bg-white shadow-lg py-2 w-40 border rounded-md">
                 <Link
@@ -32,45 +34,100 @@ const Navbar = () => {
                 >
                   Subpage 1
                 </Link>
-                <Link
-                  href="/"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Subpage 2
-                </Link>
               </div>
             )}
           </div>
 
+          <div className="relative">
+           <Link href={'/'}>
+           <button
+              className="text-blue-900 font-medium hover:text-pink-600 flex items-center"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Pages
+              <span className="ml-1">&#x25BE;</span>
+            </button>
+           </Link>
+            {isDropdownOpen && (
+              <div className="absolute top-8 left-0 bg-white shadow-lg py-2 w-40 border rounded-md">
+                <Link
+                  href={'/components/grid'}
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Page 1
+                </Link>
+                <Link
+                  href="/components/shoplist"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Page 2
+                </Link>
+                <Link
+                  href="/components/shopleftsidebar"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Page 3
+                </Link>
+              </div>
+            )}
+          </div>
           <Link
-            href="/Pages"
-            className="text-blue-900 font-medium hover:text-pink-500"
-          >
-            Pages
-          </Link>
-          <Link
-            href="/products"
+            href={'/components/productdetail'}
             className="text-blue-900 font-medium hover:text-pink-500"
           >
             Products
           </Link>
+          
+          <div className="relative">
+           <Link href={'/'}>
+           <button
+              className="text-blue-900 font-medium hover:text-pink-600 flex items-center"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Blog
+              <span className="ml-1">&#x25BE;</span>
+            </button>
+           </Link>
+            {isDropdownOpen && (
+              <div className="absolute top-8 left-0 bg-white shadow-lg py-2 w-40 border rounded-md">
+                <Link
+                  href="/components/blogpage"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                   Blog Page 
+                </Link>
+                <Link
+                  href={'/components/singleblog'}
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Single Blog
+                </Link>
+              </div>
+            )}
+          </div>
           <Link
-            href="/blog"
-            className="text-blue-900 font-medium hover:text-pink-500"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/shop"
+            href={'/components/shoppingcurt'}
             className="text-blue-900 font-medium hover:text-pink-500"
           >
             Shop
           </Link>
           <Link
-            href="/contact"
+            href={'/components/about'}
             className="text-blue-900 font-medium hover:text-pink-500"
           >
-            Contact
+            About
+          </Link>
+          <Link
+            href={'/components/hektodemo'}
+            className="text-blue-900 font-medium hover:text-pink-500"
+          >
+            Demo
+          </Link>
+          <Link
+            href={'/components/myaccount'}
+            className="text-blue-900 font-medium hover:text-pink-500"
+          >
+            Login
           </Link>
         </div>
 
@@ -121,16 +178,28 @@ const Navbar = () => {
               Blog
             </Link>
             <Link
-              href="/shop"
+              href="/components/shoppingcurt"
               className="text-blue-900 font-medium hover:text-pink-500"
             >
               Shop
             </Link>
             <Link
-              href="/contact"
+              href="/components/about"
               className="text-blue-900 font-medium hover:text-pink-500"
             >
-              Contact
+              About
+            </Link>
+            <Link
+              href="/components/hektodemo"
+              className="text-blue-900 font-medium hover:text-pink-500"
+            >
+              Demo
+            </Link>
+            <Link
+              href="/components/myaccount"
+              className="text-blue-900 font-medium hover:text-pink-500"
+            >
+              Login
             </Link>
           </div>
         </div>
